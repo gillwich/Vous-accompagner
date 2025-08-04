@@ -1,0 +1,329 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F8F9F3;
+  color: #214F4B;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.BG {
+  background: url(assets/Flower_BG.svg);
+  background-repeat: no-repeat;
+  background-size: 90vw;
+}
+
+/* ===== Typography ===== */
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #214F4B;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #F8F9F3;
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+}
+
+h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h1, h2 {
+  font-family: "Italiana", sans-serif;
+}
+
+h3, h4, p {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background-color: #F8F9F3;
+  padding: 1rem 0;
+}
+
+.nav-container {
+  position: relative;
+  height: 5vh;
+}
+
+.logo {
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.nav-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #214F4B;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #214F4B;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('assets/Hero_BG.png') bottom/cover no-repeat;
+  background-color: #F8F9F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+  position: relative;
+  top: 15vh;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #F8F9F3;
+}
+
+/* ===== Event Section ===== */
+.event-section {
+  margin: 4rem 0;
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid #D8DCD6;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-content {
+  padding: 1.5rem;
+}
+
+.event-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #214F4B;
+  text-transform: uppercase;
+}
+
+.event-info {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+/* ===== About Section ===== */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin: auto;
+  margin-top: 4rem;
+  align-items: center;
+  text-align: center;
+}
+
+.about-img img {
+  border-radius: 50%;
+  max-width: 40vw;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.btn-primary {
+  background-color: #214F4B;
+  color: #F8F9F3;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Red Hat Display", sans-serif;;
+}
+
+/* ===== Ceremony Section ===== */
+.ceremonies {
+  text-align: center;
+  margin: auto;
+  margin-top: 4.5rem;
+}
+
+.ceremony-types {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ceremony-card {
+  border: 2.5px solid #214F4B;
+  padding: 3rem;
+  border-radius: 8px;
+  background: #F8F9F3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ceremony-card img {
+  max-width: 5rem;
+}
+
+.btn-secondary {
+  margin-top: 2rem;
+  background-color: transparent;
+  color: #214F4B;
+  border: 2px solid #214F4B;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* ===== Doula Section ===== */
+.doula-section {
+  background: url(assets/Green_BG.png) top/cover no-repeat;
+  height: 80vh;
+  color: #fff;
+  padding: 10rem 20rem;
+  text-align: center;
+  margin-top: 4em;
+}
+
+.doula-section h2 {
+  color: #fff;
+}
+
+
+/* ===== Contact Section ===== */
+.contact-section {
+  margin: auto;
+  margin-top: 3.5em;
+  margin-bottom: 6em;
+  text-align: center;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #214F4B;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  background-color: #214F4B;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background-color: #214F4B;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.logo-footer {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .ceremony-types {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .event-card {
+    flex-direction: row;
+  }
+
+  .event-card img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+
+
